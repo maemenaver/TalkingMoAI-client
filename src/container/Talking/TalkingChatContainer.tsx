@@ -49,7 +49,8 @@ export default function TalkingChatContainer() {
                             _id: `${+new Date() + 1 + i}`,
                             sent: false,
                             received: false,
-                            text: newData[i],
+                            text: newData[i].type == "text" && newData[i].text,
+                            image: newData[i].type == "image" && newData[i].url,
                             user: {
                                 _id: `MoAI`,
                                 name: `모AI`,

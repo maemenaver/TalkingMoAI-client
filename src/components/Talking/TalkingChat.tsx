@@ -15,7 +15,6 @@ export default function TalkingChat({
                 user={myProfile}
                 text={text}
                 messages={chat.messages}
-                // Indicate Functions
                 onSend={onSend}
                 onInputTextChanged={(text) => setText(text)}
                 renderAvatarOnTop={true}
