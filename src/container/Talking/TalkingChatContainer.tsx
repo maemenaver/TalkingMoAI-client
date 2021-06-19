@@ -42,6 +42,12 @@ export default function TalkingChatContainer() {
 
         TalkingChatSend(currentMessages[0].text, myProfile._id).then(
             (newData) => {
+                if (!newData) {
+                    newData = [{}];
+                    newData[0].type = "text";
+                    newData[0].text = "모AI 서버와 연결을 실패했습니다.";
+                }
+
                 for (let i = 0; i < newData.length; i++) {
                     const newMessage = [
                         {

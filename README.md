@@ -12,7 +12,6 @@
 -   React-navigation
 -   Redux
 -   Expo
--   Apollo GraphQL
 -   UI-Kitten
 -   Axios
 
@@ -33,9 +32,11 @@
 
 ## Setup
 
--   yarn
+-   yarn 명령어를 입력하여 node_modules 설치
 -   firebase.tsx 작성 (firebase.tmp 참고)
+-   Write BaseURL in /src/lib/axiosinstance.ts
 
 ## Run
 
--   yarn start
+-   yarn web
+-   http://{IP}:19006 (In Browser)
